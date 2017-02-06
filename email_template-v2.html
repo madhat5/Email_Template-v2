@@ -2,10 +2,57 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>A Simple Responsive HTML Email</title>
+    <title>Email - v2</title>
     <style type="text/css">
-    body {margin: 0; padding: 0; min-width: 100%!important;}
-    .content {width: 100%; max-width: 600px;}
+    body {
+        margin: 0;
+        padding: 0;
+        min-width: 100%!important;
+    }
+    .content {
+        width: 100%;
+        max-width: 600px;
+     }
+     @@media only screen and (min-device-width: 601px) {
+        .content {width: 600px !important;}
+     }
+     .header {
+         padding: 40px 30px 20px 30px;
+     }
+     .col425{
+         width: 425px !important;
+     }
+     .subhead {
+         font-size: 15px;
+         color: #ffffff;
+         font-family: sans-serif;
+         letter-spacing: 10px;
+     }
+     .h1 {
+         font-size: 33px;
+         line-height: 38px;
+         font-weight: bold;
+     }
+     .h1, .h2 .bodycopy {
+         color: #153643;
+         font-family: sans-serif;
+     }
+     .innerpadding {
+         padding: 30px 30px 30px 30px;
+     }
+     .borderbottom {
+         border-bottom: 1px solid #f2eeed;
+     }
+     .h2 {
+         padding: 0 0 15px;
+         font-size: 24px;
+         line-height: 28px;
+         font-weight: bold;
+     }
+     .bodycopy {
+         font-size: 16px;
+         line-height: 22px;
+     }
     </style>
 </head>
 
@@ -13,13 +60,82 @@
     <table width="100%" bgcolor="#f6f8f1" border="0" cellpadding="0" cellspacing="0">
         <tr>
             <td>
-                <table class="content" align="center" cellpadding="0" cellspacing="0" border="0">
+                <!-- [if (gte mso 9) | (IE)] >
+                <table width="600" align="center" cellpadding="0" cellspacing="0" border"0"
                     <tr>
                         <td>
-                            Hello!
+                <! [endif] -->
+                <table class="content" align="center" cellpadding="0" cellspacing="0" border="1">
+                    <tr>
+                        <td class="header" bgcolor="#c7d8a7">
+                            <table width="70" align="left" border="1" cellpadding="0" cellspacing="0" >
+                                <tr>
+                                    <td height="70" style="padding: 0 20px 20px 0;">
+                                        <img src="http://www.myiconfinder.com/uploads/iconsets/aed09cb048383509be63cc1991794c29-lcd.png" alt="Random Icon" width="70" height="70" border="0">
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- [if (gte mso 9) | (IE)] >
+                            <table width="425" align="left" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td>
+                            <! [endif] -->
+                            <table class="col425" align="left" border="1" cellpadding="0" cellspacing="0" style="width:100%; max-width: 425px;">
+                                <tr>
+                                    <td height="70">
+                                        <table width="100%" border="1" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="subhead" style="padding: 0 0 0 3p;x">
+                                                    LINE 1
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="h1" style="padding 5px 0 0 0;">
+                                                    LINE 2: Response Email
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- [if (gte mso 9) | (IE)] >
+                                    </td>
+                                </tr>
+                            </table>
+                            <! [endif] -->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="innerpadding borderbottom">
+                            <table width="100%" border="1" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="h2">
+                                        LINE 3 Response Email copy
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="bodycopy">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            
                         </td>
                     </tr>
                 </table>
+                <!-- [if (gte mso 9) | (IE)] >
+                        </td>
+                    </tr>
+                </table>
+                <! [endif] -->
             </td>
         </tr>
     </table>
